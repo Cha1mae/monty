@@ -73,4 +73,16 @@ extern stack_t *head;
 /*pint*/
 void pin(stack_t **stack, unsigned int line_number);
 
+/*pop*/
+void pop_lol(stack_t **stack, unsigned int line_number);
+
+/*the ol swapin method*/
+void n_swaper(stack_t **stack, unsigned int line_number);
+
+/*add op*/
+void t_add(stack_t **stack, unsigned int line_number);
+
+/*useless*/
+void nope_lol(stack_t **stack, unsigned int line_number);
+
 #endif

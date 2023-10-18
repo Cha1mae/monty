@@ -50,6 +50,10 @@ void func_finder(char *opcode, char *value, int ln, int format)
 		{"push", stack_add},
 		{"pall", stack_print},
 		{"pint", pin},
+		{"pop", pop_lol},
+		{"swap", n_swaper},
+		{"add", t_add},
+		{"nop", nope_lol},
 		{NULL, NULL}
 	};
 
