@@ -46,3 +46,40 @@ void eror(int error_code, ...)
 	stack_free();
 	exit(EXIT_FAILURE);
 }
+/**
+ * eror1 - handles more errors errors.
+ * @error_code: The error codes are the following:
+ * (6) =>  empty for pin
+ * (7) => empty for pop.
+ * (8) => too short for operation.
+ * (9) => Division by zero.
+ */
+void eror1(int error_code, ...)
+{
+	va_list ag;
+	char *instructions;
+	int line_num;
+
+	va_start(ag, error_code);
+	switch (error_code)
+	{
+		case 6:
+			fprintf(stderr, "L%d: can't pint, stack empty\n", va_arg(ag, int));
+			break;
+		case 7:
+			fprintf(stderr, "L%d: can't pop an empty stack\n", va_arg(ag, int));
+			break;
+		case 8:
+			line_num = va_arg(ag, unsigned int);
+			instructions = va_arg(ag, char *);
+			fprintf(stderr, "L%d: can't %s, stack too short\n", line_num, instructions);
+			break;
+		case 9:
+			fprintf(stderr, "L%d: division by zero\n", va_arg(ag, unsigned int));
+			break;
+		default:
+			break;
+	}
+	stack_free();
+	exit(EXIT_FAILURE);
+}

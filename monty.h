@@ -60,6 +60,7 @@ void readf(FILE *fd);
 
 /*error*/
 void eror(int error_code, ...);
+void eror1(int error_code, ...);
 
 /*func*/
 int sep_line(char *buffer, int line_number, int format);
@@ -68,5 +69,8 @@ void b_called(op_func func, char *op, char *val, int ln, int format);
 
 /*head*/
 extern stack_t *head;
+
+/*pint*/
+void pin(stack_t **stack, unsigned int line_number);
 
 #endif

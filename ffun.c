@@ -49,6 +49,7 @@ void func_finder(char *opcode, char *value, int ln, int format)
 	instruction_t func_list[] = {
 		{"push", stack_add},
 		{"pall", stack_print},
+		{"pint", pin},
 		{NULL, NULL}
 	};
 
