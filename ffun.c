@@ -54,6 +54,10 @@ void func_finder(char *opcode, char *value, int ln, int format)
 		{"swap", n_swaper},
 		{"add", t_add},
 		{"nop", nope_lol},
+		{"sub", sub_ig},
+		{"div", div_ig},
+		{"mul", mul_ig},
+		{"mod", mod_c},
 		{NULL, NULL}
 	};
 

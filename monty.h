@@ -85,4 +85,11 @@ void t_add(stack_t **stack, unsigned int line_number);
 /*useless*/
 void nope_lol(stack_t **stack, unsigned int line_number);
 
+/*calc*/
+void sub_ig(stack_t **stack, unsigned int line_number);
+void div_ig(stack_t **stack, unsigned int line_number);
+void mul_ig(stack_t **stack, unsigned int line_number);
+void mod_c(stack_t **stack, unsigned int line_number);
+
+
 #endif
