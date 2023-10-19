@@ -58,6 +58,8 @@ void func_finder(char *opcode, char *value, int ln, int format)
 		{"div", div_ig},
 		{"mul", mul_ig},
 		{"mod", mod_c},
+		{"rotl", op_rotl},
+		{"rotr", op_rotl},
 		{NULL, NULL}
 	};
 

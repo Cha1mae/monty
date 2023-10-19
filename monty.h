@@ -91,5 +91,10 @@ void div_ig(stack_t **stack, unsigned int line_number);
 void mul_ig(stack_t **stack, unsigned int line_number);
 void mod_c(stack_t **stack, unsigned int line_number);
 
+/*rotl rotr*/
+void op_rotr(stack_t **stack, __attribute__((unused))unsigned int ln);
+void op_rotl(stack_t **stack, __attribute__((unused))unsigned int ln);
+
+
 
 #endif
